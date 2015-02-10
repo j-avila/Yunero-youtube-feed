@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo for Yunero - Jquery plugin displays a video feed for YouTube channel uploads or custom playlist with subscription box</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+	
+	//var youTubeURL = "http://www.youtube.com/playlist?list=PLZnxqowr6IKidF63-ybswuiO074g366-Y";
+	//var youTubeURL = "http://www.youtube.com/user/Apple?feature=blablabka";
+	//var youTubeURL = "http://www.youtube.com/user/Apple";
+	var youTubeURL = "http://www.youtube.com/user/googlechrome";
+	
+	//optional---------------------------------------
+	var yuneroWidgetHeight = 400; 
+	var yuneroWidgetWidth = 280; 
+	
+	function goClicked() {
+		$('#yunero').empty().append(' loading ...');
+		youTubeURL=$('#youTubeUrl').val();
+		
+		loadYunero();
+	}
+
+	</script>
+<style>
+body {
+font-family: Calibri;
+font-size: 14px;
+text-align: center;
+}
+</style>
+<link href="http://www.jqueryscript.net/css/top.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="menu">
+<div class="w"> <a href="http://www.jqueryscript.net/social-media/jQuery-Plugin-For-Displaying-YouTube-Video-Feed-Yunero.html">Download</a> - <a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></div>
+</div>
+<h1>Yunero - Jquery plugin displays a video feed for YouTube channel uploads or custom playlist with subscription box</h1>
+Enter your Youtube Channel Url: <span style="color:red;">(Ex: http://www.youtube.com/user/Apple)</span><br/>
+OR Enter your playlist Url: <span style="color:red;">(Ex: http://www.youtube.com/playlist?list=PLZnxqowr6IKidF63-ybswuiO074g366-Y)</span><br/>
+<br/>
+<input type="text" id="youTubeUrl"/>
+&nbsp;
+<input type="button" value="Go" onclick="goClicked();">
+<br/>
+<br/>
+<div id="yunero"> </div>
+<script src="./yunero.min.js"></script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
