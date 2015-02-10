@@ -1,7 +1,7 @@
 # Yunero-youtube-feed
 Feed de canales de youtube con jquery
 
-Para su  uso es muy sencillo,  solo debes reemplazar el cnal  en la prueba por el canal  que se desea mostrar
+Para su uso es muy sencillo,  solo debes reemplazar el canal en la prueba por el canal que se desea mostrar
 
 
 
